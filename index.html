@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/main.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+    <header id="header" class="container-fluid d-flex justify-content-center">
+            <div class="header-holder d-flex align-items-center justify-content-between gap-3">
+                <div class="header-box d-flex align-items-center gap-4">
+                    <a href="/" class="logo">
+                        <img src="dist/images/logo.svg" alt="miro" width="91" height="32">
+                    </a>
+
+                    <nav class="nav nav-main navbar-expand-xl">
+                        <button class="btn btn-primary d-xl-none menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"></button>
+                        <div class="menu-holder offcanvas offcanvas-start" id="offcanvas">
+                            <button type="button" class="btn-close d-xl-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <ul class="d-flex flex-xl-row flex-column align-items-xl-center p-0 m-0 gap-xl-3" id="menu">
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" id="dropdownMenuButton-Product" data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-Product">
+                                <li><a href="#">some long Item for dropdown menu</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" id="dropdownMenuButton-Solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-Solutions">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" id="dropdownMenuButton-Resources" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-Resources">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <nav class="nav nav-secondary d-flex align-items-center">
+                    <ul class="m-0 p-0 d-flex align-items-center gap-2 gap-md-3">
+                        <li class="dropdown lang-switcher ">
+                          <a href="#" class="dropdown-toggle d-flex align-items-center gap-1" id="dropdownMenuButton-lang" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-none d-md-inline">
+                                <img src="dist/images/ico-globe2.svg" alt="EN" width="25" height="25">
+                            </span>
+                            EN
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-lang">
+                            <li><a href="#">United Kingdom</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Contact <span class="d-none d-md-inline">Sales</span></a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#" class="btn btn-primary">Sign up<span class="d-none d-md-inline"> free &rarr;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main id="main">
+        <section class="banner d-flex flex-column flex-md-row mx-auto">
+            <div class="banner-text col-md-5 col-12">
+                <div class="text-holder">
+                    <h1>Take ideas from better to best</h1>
+                    <p>Miro is your team's visual platform to connect, collaborate, and create — together.</p>
+                </div>
+
+                <form action="#" class="d-flex flex-column" id="form-subscribe">
+                    <div class="input-holder">
+                        <input type="text" id="email" class="form-control" placeholder="Enter your work email" required>
+                    </div>
+                    <button class="btn btn-primary">Sign up free &rarr;</button>
+                    <small>Collaborate with your team within minutes</small>
+                </form>
+            </div>
+
+            <div class="banner-image col-12 col-md-7">
+                <img src="src/images/img1.jpg" alt="some image alt text" width="640" height="463">
+            </div>
+        </section>
+
+        <section class="columns">
+            <h1 class="text-center">
+                <span>
+                    <em class="mark">Your idea starts here</em>
+                    Collaborate without<br>constraints
+                </span>
+            </h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-holder">
+                            <h2>Free forever</h2>
+                            <p>Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our <a href="#">pricing plans</a> for more features.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="text-holder">
+                            <h2>Easy integrations</h2>
+                            <p>Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our <a href="#">Marketplace</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="text-holder">
+                            <h2>Security first</h2>
+                            <p>We treat your data like you would — with the utmost care. We follow industry-leading security standards and give you tools to protect intellectual property. Learn more at our <a href="#">Trust Center</a> .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <a href="#" class="btn btn-primary">Sign up free &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="container-fluid">
+        <section class="footer-holder mx-auto d-flex align-items-center flex-row flex-xl-row flex-column row-gap-3">
+            <nav class="me-xl-auto d-flex flex-column flex-lg-row gap-4">
+                <ul class="m-0 p-0 d-flex align-items-center justify-content-center gap-4">
+                    <li><a href="#" class="twitter"><img src="src/images/ico-twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#" class="facebook"><img src="src/images/ico-facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#" class="linkedin"><img src="src/images/ico-linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="#" class="instagram"><img src="src/images/ico-instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#" class="youtube"><img src="src/images/ico-youtube.svg" alt="youtube"></a></li>
+                </ul>
+
+                <a href="#" class="lang d-lg-flex align-items-center gap-2 d-none">
+                    <img src="dist/images/ico-globe.svg" alt="EN" width="25" height="25">
+                    EN
+                </a>
+
+                <ul class="m-0 p-0 d-flex align-items-center gap-4 text-center">
+                    <li><a href="#">&copy; 2022 Miro</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Manage Cookies</a></li>
+                </ul>
+            </nav>
+            <div class="apps d-flex align-items-center gap-3">
+                <a href="#"><img src="src/images/img-app-store.png" alt="app store"></a>
+                <a href="#"><img src="src/images/img-google-play.png" alt="google play"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

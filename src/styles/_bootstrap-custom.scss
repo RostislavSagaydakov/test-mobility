@@ -1,0 +1,14 @@
+.btn {
+    --bs-btn-border-radius: 24px;
+    --bs-btn-color: #fff;
+    --bs-btn-padding-y: .75rem;
+    --bs-btn-padding-x: 1.4rem;
+
+    &-primary {
+        --bs-btn-bg: rgba(66, 98, 255, 1);
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.25rem;
+}

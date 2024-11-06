@@ -1,0 +1,37 @@
+// add custom font
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+
+// image path
+$image-path: "../images/";
+
+// colors
+$white: rgba(255, 255, 255, 1);
+$gray1: rgba(240, 240, 240, 1);
+$gray2: rgba(155, 153, 175, 1);
+$gray3: rgba(5, 0, 56, 0.6);
+$dark1: rgba(5, 0, 56, 1);
+$dark2: rgba(9, 9, 9, 1);
+$blue1: rgba(66, 98, 255, 1);
+$yellow: rgba(255, 208, 47, 1);
+
+// text sizes
+$header-text-size: 1rem;
+
+// fonts
+$base-font: helvetica, arial, sans-serif;
+$secondary-font: Inter, $base-font;
+
+// icons
+$arrow-down: url("#{$image-path}arrow-down.svg");
+$ico-menu: url("#{$image-path}ico-menu.svg");
+
+$header-width: 1380px;
+$header-border-color: 1px solid rgba(240, 240, 240, 1);
+$header-link-color: $dark1;
+
+// forms
+$input-border-color: $gray2;
+
+// footer
+$footer-width: 1323px;
+$footer-border-color: $gray2;

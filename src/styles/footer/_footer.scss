@@ -1,0 +1,25 @@
+@use "../variables" as *;
+
+#footer {
+    background: $dark1;
+    color: $white;
+    padding-top: 40px;
+
+    a {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.footer-holder {
+    width: clamp(300px, 100%, $footer-width);
+    border-top: 1px solid $footer-border-color;
+    padding-block: 59px 60px;
+}

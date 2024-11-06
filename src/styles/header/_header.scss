@@ -1,0 +1,18 @@
+@use "../variables" as *;
+
+#header {
+  border-bottom: $header-border-color;
+  padding-block: 20px;
+  font-size: $header-text-size;
+  margin-bottom: 40px;
+
+  .header {
+    &-holder {
+      width: clamp(300px, 100%, $header-width);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

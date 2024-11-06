@@ -1,0 +1,159 @@
+@use "../variables" as *;
+@use "../../../node_modules/bootstrap/scss/bootstrap";
+
+#menu {
+    a {
+        position: relative;
+
+        &:before {
+            @include bootstrap.media-breakpoint-up(xl) {
+                height: 3px;
+                width: 0;
+                background: $blue1;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: "";
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        &:hover:before {
+            width: 100%;
+        }
+
+        &.dropdown-toggle {
+            &:after {
+                border-style: none;
+                width: 13px;
+                height: 10px;
+                background: $arrow-down no-repeat center;
+                vertical-align: middle;
+                margin-left: 9px;
+                transition: all 0.2s ease-in-out;
+                position: relative;
+
+                @include bootstrap.media-breakpoint-down(xl) {
+                    position: absolute;
+                    height: 100%;
+                    width: 32px;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+            &.show:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    li {
+        padding-inline: 4px;
+        @include bootstrap.media-breakpoint-down(xl) {
+            padding-inline: 12px;
+        }
+    }
+
+    > li {
+        @include bootstrap.media-breakpoint-down(xl) {
+            &:not(:first-child) {
+                border-top: $header-border-color;
+            }
+        }
+    }
+}
+
+.nav {
+    a:not(.btn) {
+        color: $dark1;
+        padding-block: 10px;
+        display: block;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .dropdown:not(.lang-switcher) .dropdown-menu {
+         @include bootstrap.media-breakpoint-down(xl) {
+            position: static !important;
+            transform: none !important;
+            width: 100%;
+            border-style: none;
+            padding: 0;
+        }
+    }
+
+    .dropdown-menu {
+        white-space: nowrap;
+
+        a {
+            padding: 6px 12px;
+            background: $white;
+            transition: all 0.2s ease-in-out;
+            
+            &:hover {
+                background: $blue1;
+                color: $white;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .menu-holder {
+        @include bootstrap.media-breakpoint-down(xl) {
+            padding-top: 3rem;
+            height: 100vh;
+            overflow: auto;
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
+    }
+}
+
+.lang-switcher {
+    .dropdown-toggle:after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background: $white;
+
+        &:before {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: $white;
+            box-shadow: 1px 1px 0 0 var(--bs-dropdown-border-color);
+            content: '';
+            transform: rotate(-135deg);
+            left: 7px;
+            top: -4px;
+        }
+
+        a {
+            background: transparent;
+        }
+    }
+}
+
+.menu-toggle {
+    padding: 0;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 10%;
+    position: relative;
+    background-image: $ico-menu;
+    -webkit-background-size: 25px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

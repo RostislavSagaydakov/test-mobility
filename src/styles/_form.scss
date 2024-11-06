@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+.form-control {
+    border: 1px solid $input-border-color;
+    font-size: 1.125rem;
+    margin-bottom: .2rem;
+    border-radius: 2rem;
+    padding: 10px 25px;
+}
+
+form small {
+    font-size: 0.875rem;
+    color: $dark1;
+    opacity: .4;
+}

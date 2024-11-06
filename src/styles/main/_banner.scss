@@ -1,0 +1,22 @@
+.banner {
+    padding-inline: 40px;
+    width: clamp(300px, 1200px, 100%);
+    gap: 20px 40px;
+    margin-bottom: 9rem;
+
+    .text-holder {
+        max-width: 376px;
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    form {
+        gap: 7px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

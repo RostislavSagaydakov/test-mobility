@@ -1,0 +1,24 @@
+@use "../variables" as *;
+@use "../../../node_modules/bootstrap/scss/bootstrap";
+
+.columns {
+    .container {
+        max-width: 1140px;
+        padding-bottom: 15px;
+    }
+
+    .text-holder {
+        padding: 23px 34px 28px 24px;
+        @include bootstrap.media-breakpoint-down(lg) {
+            padding: 20px;
+        }
+
+        p {
+            color: $gray3;
+        }
+
+        a {
+            color: $blue1;
+        }
+    }
+}
